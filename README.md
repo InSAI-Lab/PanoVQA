@@ -1,5 +1,8 @@
 # [CVPR 2026]: More than the Sum: Panorama-Language Models for Adverse Omni-Scenes 
 
+![PanoVQA](fig1.png "Overview of Panorama-Language Modeling (PLM).")
+
+
 **Paper Link:** [Coming Soon]()
 
 ## 📊 Datasets
