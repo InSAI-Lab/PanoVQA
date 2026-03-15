@@ -2,24 +2,23 @@
 
 ![PanoVQA](assets/fig1.png "Overview of Panorama-Language Modeling (PLM).")
 
-Demo:
-Comming Soon~
+**Demo:** Coming Soon~
 
 **Paper Links:** 
-<!-- [Coming Soon](https://arxiv.org/abs/2603.09573) -->
-
 [![arXiv](https://img.shields.io/badge/arXiv-2511.14097-b31b1b.svg)](https://arxiv.org/abs/2603.09573)
 [![PDF](https://img.shields.io/badge/PDF-Download-red.svg)](https://arxiv.org/pdf/2603.09573)
+
 ## 📊 Datasets
 
 Download the datasets from Google Drive:
 - **PanoVQA:** [Download Link](https://drive.google.com/drive/folders/1NOpXK-oR6P4JEm4ewuwkF29xV3kS-zE4?usp=drive_link)
 - **PanoVQA-mini:** [Download Link](https://drive.google.com/drive/folders/1jtoEJtUBpen3OS4G_udl2zODKSKYKT4m?usp=drive_link)
 
-and unzip them.
+After downloading, unzip the files.
 
-### Structure
-Please organize your workspace as follows. Ensure all datasets are placed under the corresponding directories:
+### Directory Structure
+Please organize your workspace as follows. Ensure all datasets are placed under their corresponding directories before running the code:
+
 ```text
 Workspace/
 ├── PanoVQA/
@@ -35,6 +34,10 @@ Workspace/
 ```
 
 ## 🛠️ Environment Setup
+We recommend using mini-conda to manage your virion environment. 
+```bash
+conda create -n plm python=3.11
+```
 
 We recommend installing the required dependencies with the following commands to match the Qwen-VL ecosystem:
 ```bash
@@ -105,7 +108,17 @@ CVPR version:
   year={2026}
 }
 ```
-## 🙏 Acknowledgments
-This work was supported by the Shenzhen University Overseas Exchange Scholarship, which supported my living expenses in Karlsruhe. I had a very nice time in Karlsruhe.
 
-This work is based on the [Qwen-VL](https://github.com/QwenLM/Qwen3-VL) team repository. Huge thanks to their contributors and the community!
+## To-do List
+
+- [x] Update paper
+- [] Update training code
+- [] Update evaluting code
+- [] Update training and evaluting log
+- [] Update demo
+- [] Submit to HuggingFace (thanks advices from Niels)
+
+## 🙏 Acknowledgments
+This work was supported by the Shenzhen University Overseas Exchange Scholarship, which supported my living expenses in Karlsruhe. I had a very nice time in KIT.
+
+This work is based on the [Qwen-VL](https://github.com/QwenLM/Qwen3-VL) repository. Huge thanks to contributors and their contributions to the community!
