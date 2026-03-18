@@ -21,51 +21,63 @@ Please organize your workspace as follows. Ensure all datasets are placed under 
 
 ```text
 Workspace/
-├── PanoVQA/
-│   ├── BlendPASS/
-│   ├── DeepAccident/
-│   └── NuScenes/
-├── PanoVQA_mini/
-│   ├── BlendPASS/
-│   ├── DeepAccident/
-│   └── NuScenes/
-└── Panorama/
-    └── images/
+├── PLM/                # (Your code directory)
+│   ├── plm-finetune/   # Training and inference scripts
+│   ├── plm-utils/      # Helper utilities
+│   ├── eval_benchmark/ # Evaluation codes
+│   └── ...
+└── data/               # (Datasets you just downloaded)
+    ├── PanoVQA/
+    │   ├── BlendPASS/
+    │   ├── DeepAccident/
+    │   └── NuScenes/
+    ├── PanoVQA_mini/
+    │   ├── BlendPASS/
+    │   ├── DeepAccident/
+    │   └── NuScenes/
+    └── Panorama/
+        └── images/
 ```
 
 ## 🛠️ Environment Setup
-We recommend using mini-conda to manage your virion environment. 
+
+We recommend using Miniconda to manage your virtual environment. 
+
+**1. Create and activate a new Conda environment:**
 ```bash
-conda create -n plm python=3.11
+conda create -n plm python=3.11 -y
+conda activate plm
 ```
 
+**2. Install core dependencies:**
 We recommend installing the required dependencies with the following commands to match the Qwen-VL ecosystem:
 ```bash
 pip install transformers==4.51.3 accelerate
 ```
 
-We offer a toolkit to help you handle various types of visual input more conveniently. We highly recommend using the `[decord]` feature for faster video loading:
+**3. Install the vision processing toolkit:**
+We offer a toolkit to help you handle various types of visual inputs more conveniently. We highly recommend using the `[decord]` feature for faster video loading:
 ```bash
 pip install qwen-vl-utils[decord]
 ```
 
-**Flash-Attention 2 to speed up generation**  
-For better acceleration and memory savings, especially in multi-image and video scenarios, make sure to install the latest version of Flash Attention 2:
+**4. Install Flash-Attention 2 (Recommended):**
+For better acceleration and memory savings, especially in multi-image and video scenarios, please install the latest version of Flash Attention 2:
 ```bash
 pip install -U flash-attn --no-build-isolation
 ```
 
 ## 🚀 Training
-Configure your data at:
+
+1. Configure your data paths in:
 ```bash
-./PLM/plm-finetune/plm/data/__init__.py
+./plm-finetune/plm/data/__init__.py
 ```
 
-
-Navigate to the fine-tuning directory and run your training script:
+2. Navigate to the fine-tuning directory and run your training script:
 ```bash
 cd plm-finetune
-sh scripts/sft_3b.sh  # or your respective script
+sh scripts/sft_3b.sh  # Or run your respective script
 ```
 
 ## ⚖️ Evaluation
@@ -89,19 +101,12 @@ python get_gpt_score.py \
 ```
 
 ## 🎯 Citation
-ArXiv version:
-```bibtex
-@article{fan2026PanoVQA,
-  title={More than the Sum: Panorama-Language Models for Adverse Omni-Scenes},
-  author={Fan, Weijia and Liu, Ruiping and Wei, Jiale and Chen, Yufan and Zheng, Junwei and Zeng, Zichao and Zhang, Jiaming and Li, Qiufu and Shen, Linlin and Stiefelhagen, Rainer},
-  journal={arXiv preprint arXiv:2603.09573},
-  year={2026}
-}
-```
 
-CVPR version:
+If you find our work helpful, please consider citing:
+
+**CVPR version:**
 ```bibtex
-@article{fan2026PanoVQA,
+@inproceedings{fan2026PanoVQA,
   title={More than the Sum: Panorama-Language Models for Adverse Omni-Scenes},
   author={Fan, Weijia and Liu, Ruiping and Wei, Jiale and Chen, Yufan and Zheng, Junwei and Zeng, Zichao and Zhang, Jiaming and Li, Qiufu and Shen, Linlin and Stiefelhagen, Rainer},
   booktitle={2026 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
@@ -109,16 +114,27 @@ CVPR version:
 }
 ```
 
-## To-do List
+**ArXiv version:**
+```bibtex
+@article{fan2026PanoVQArxiv,
+  title={More than the Sum: Panorama-Language Models for Adverse Omni-Scenes},
+  author={Fan, Weijia and Liu, Ruiping and Wei, Jiale and Chen, Yufan and Zheng, Junwei and Zeng, Zichao and Zhang, Jiaming and Li, Qiufu and Shen, Linlin and Stiefelhagen, Rainer},
+  journal={arXiv preprint arXiv:2603.09573},
+  year={2026}
+}
+```
+
+## 📝 To-do List
 
 - [x] Update paper
-- [] Update training code
-- [] Update evaluting code
-- [] Update training and evaluting log
-- [] Update demo
-- [] Submit to HuggingFace (thanks advices from Niels)
+- [ ] Update training code
+- [ ] Update evaluating code
+- [ ] Update training and evaluating logs
+- [ ] Update demo
+- [ ] Update faster version of PSA
+- [ ] Submit to HuggingFace (thanks to Niels for the advice)
 
 ## 🙏 Acknowledgments
 This work was supported by the Shenzhen University Overseas Exchange Scholarship, which supported my living expenses in Karlsruhe. I had a very nice time in KIT.
 
-This work is based on the [Qwen-VL](https://github.com/QwenLM/Qwen3-VL) repository. Huge thanks to contributors and their contributions to the community!
+This work is based on the [Qwen-VL](https://github.com/QwenLM/Qwen3-VL) repository. Huge thanks to the contributors for their efforts in the community!

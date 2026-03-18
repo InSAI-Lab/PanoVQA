@@ -1,0 +1,114 @@
+# ==============================================================================
+# Security & Credentials
+# ==============================================================================
+# API keys, passwords, and sensitive configurations
+*apikey*
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+credentials.json
+secrets.json
+auth.json
+
+# ==============================================================================
+# Deep Learning / Model Weights & Logs
+# ==============================================================================
+# Exclude all PyTorch model weights and checkpoints
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.index.json
+*trainer_state.json
+
+# Exclude training outputs, intermediate structures, adapter layers
+plm-finetune/output/
+
+# Exclude all log files, TensorBoard, Wandb, run details
+*.log
+logs/
+plm-finetune/wandb/
+runs/
+tb_logs/
+
+# Inference results and predictions
+eval_benchmark/outputs/
+*.json.bak
+
+# ==============================================================================
+# Datasets & Experimental Data
+# ==============================================================================
+# Massive dataset folders, images, videos or annotations
+datasets/
+data/
+PanoVQA/
+Panorama/
+*.pkl
+*.cache
+*.h5
+*.npy
+*.npz
+*.tar.gz
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+
+# ==============================================================================
+# Python / Cache / Environments
+# ==============================================================================
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==============================================================================
+# IDEs / Editors / OS Files
+# ==============================================================================
+# VSCode, PyCharm, and other editor configurations / temporaries
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ==============================================================================
+# Temporary Files
+# ==============================================================================
+*.tmp
+*.temp
+*.bak
+
+apikey.backup
+
