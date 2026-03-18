@@ -100,6 +100,11 @@ python get_gpt_score.py \
   -k "YOUR_OPENAI_API_KEY"
 ```
 
+### 📈 Training and Evaluation Logs
+For full transparency and to help you reproduce our results, you can access our comprehensive training logs and GPT evaluation outputs here:
+- **[Evaluation Logs (GPT Scores)](https://github.com/InSAI-Lab/PanoVQA/tree/master/eval_benchmark/outputs/gpt_score)** 
+- **[Training Logs (Wandb/Loss States)](https://github.com/InSAI-Lab/PanoVQA/tree/master/plm-finetune/output)**
+
 ## 🎯 Citation
 
 If you find our work helpful, please consider citing:
