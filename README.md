@@ -108,18 +108,6 @@ For full transparency and to help you reproduce our results, you can access our 
 ## 🎯 Citation
 
 If you find our work helpful, please consider citing:
-
-**CVPR version:**
-```bibtex
-@inproceedings{fan2026PanoVQA,
-  title={More than the Sum: Panorama-Language Models for Adverse Omni-Scenes},
-  author={Fan, Weijia and Liu, Ruiping and Wei, Jiale and Chen, Yufan and Zheng, Junwei and Zeng, Zichao and Zhang, Jiaming and Li, Qiufu and Shen, Linlin and Stiefelhagen, Rainer},
-  booktitle={2026 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2026}
-}
-```
-
-**ArXiv version:**
 ```bibtex
 @article{fan2026PanoVQArxiv,
   title={More than the Sum: Panorama-Language Models for Adverse Omni-Scenes},
@@ -135,6 +123,7 @@ If you find our work helpful, please consider citing:
 - [x] Update training code
 - [x] Update evaluating code
 - [x] Update training and evaluating logs
+- [ ] Release the checkpoints
 - [ ] Update demo
 - [x] Update faster version of PSA
 - [ ] Submit to HuggingFace (thanks to Niels for the advice)
