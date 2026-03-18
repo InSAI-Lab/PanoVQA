@@ -127,11 +127,11 @@ If you find our work helpful, please consider citing:
 ## 📝 To-do List
 
 - [x] Update paper
-- [ ] Update training code
-- [ ] Update evaluating code
-- [ ] Update training and evaluating logs
+- [x] Update training code
+- [x] Update evaluating code
+- [x] Update training and evaluating logs
 - [ ] Update demo
-- [ ] Update faster version of PSA
+- [x] Update faster version of PSA
 - [ ] Submit to HuggingFace (thanks to Niels for the advice)
 
 ## 🙏 Acknowledgments
