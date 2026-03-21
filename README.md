@@ -129,6 +129,7 @@ If you find our work helpful, please consider citing:
 - [ ] Submit to HuggingFace (thanks to Niels for the advice)
 
 ## 🙏 Acknowledgments
-This work was supported by the Shenzhen University Overseas Exchange Scholarship, which supported my living expenses in Karlsruhe. Huge thanks to KIT and fellows, I had quite a nice experience there. 
+This work was supported by the Shenzhen University Overseas Exchange Scholarship, which supported my living expenses in Karlsruhe. Thanks SZU!
+Huge thanks to KIT and fellows, I had quite a nice experience there. 
 
 This work is based on the [Qwen-VL](https://github.com/QwenLM/Qwen3-VL) repository. Huge thanks to the contributors for their efforts in the community!
