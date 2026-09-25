@@ -44,6 +44,7 @@ eval_benchmark/outputs/
 # Massive dataset folders, images, videos or annotations
 datasets/
 data/
+!plm-finetune/plm/data/
 PanoVQA/
 Panorama/
 *.pkl
