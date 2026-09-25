@@ -100,6 +100,9 @@ python get_gpt_score.py \
   -k "YOUR_OPENAI_API_KEY"
 ```
 
+###  Checkpoints
+Checkpoints can be found in [Huggingface](https://huggingface.co/wakinghours/PLM/tree/main)
+
 ### 📈 Training and Evaluation Logs
 For full transparency and to help you reproduce our results, you can access our comprehensive training logs and GPT evaluation outputs here:
 - **[Evaluation Logs (GPT Scores)](https://github.com/InSAI-Lab/PanoVQA/tree/master/eval_benchmark/outputs/gpt_score)** 
@@ -122,14 +125,14 @@ If you find our work helpful, please consider citing:
 - [x] Update paper
 - [x] Update training code
 - [x] Update evaluating code
-- [x] Update training and evaluating logs
-- [ ] Release the checkpoints
+- [x] Update training and evaluation logs
+- [x] Release the checkpoints
 - [ ] Update demo
 - [x] Update faster version of PSA
 - [ ] Submit to HuggingFace (thanks to Niels for the advice)
 
 ## 🙏 Acknowledgments
-This work was supported by the Shenzhen University Overseas Exchange Scholarship, which supported my living expenses in Karlsruhe. Thanks SZU!
-Huge thanks to KIT and fellows, I had quite a nice experience there. 
+This work was supported by the Shenzhen University Overseas Exchange Scholarship, which supported my living expenses in Karlsruhe. Thanks to SZU!
+Huge thanks to KIT and fellows, I had a quite nice experience there. 
 
 This work is based on the [Qwen-VL](https://github.com/QwenLM/Qwen3-VL) repository. Huge thanks to the contributors for their efforts in the community!
