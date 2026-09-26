@@ -10,12 +10,14 @@
 
 ## 📊 Datasets
 
-Download the datasets from Google Drive:
-- **PanoVQA:** [Download Link](https://drive.google.com/drive/folders/1NOpXK-oR6P4JEm4ewuwkF29xV3kS-zE4?usp=drive_link)
-- **PanoVQA-mini:** [Download Link](https://drive.google.com/drive/folders/1jtoEJtUBpen3OS4G_udl2zODKSKYKT4m?usp=drive_link)
+Download the datasets:
+- **PanoVQA:** ~~[Google Drive Download Link](https://drive.google.com/drive/folders/1NOpXK-oR6P4JEm4ewuwkF29xV3kS-zE4?usp=drive_link)~~ (removed due to storage limitations)
+- **PanoVQA-mini:** ~~[Download Link](https://drive.google.com/drive/folders/1jtoEJtUBpen3OS4G_udl2zODKSKYKT4m?usp=drive_link)~~
 
-After downloading, unzip the files.
+[2026.09.26 | Update] PanoVQA is now available on [Hugging Face](https://huggingface.co/datasets/wakinghours/PanoVQA). After downloading, pls unzip the files manually.
 
+## Checkpoints:
+Models' checkpoints are available at https://huggingface.co/wakinghours/PLM/tree/main
 ### Directory Structure
 Please organize your workspace as follows. Ensure all datasets are placed under their corresponding directories before running the code:
 
