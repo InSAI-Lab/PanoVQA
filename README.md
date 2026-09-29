@@ -114,11 +114,13 @@ For full transparency and to help you reproduce our results, you can access our 
 
 If you find our work helpful, please consider citing:
 ```bibtex
-@article{fan2026PanoVQArxiv,
-  title={More than the Sum: Panorama-Language Models for Adverse Omni-Scenes},
-  author={Fan, Weijia and Liu, Ruiping and Wei, Jiale and Chen, Yufan and Zheng, Junwei and Zeng, Zichao and Zhang, Jiaming and Li, Qiufu and Shen, Linlin and Stiefelhagen, Rainer},
-  journal={arXiv preprint arXiv:2603.09573},
-  year={2026}
+@InProceedings{fan2026PanoVQA_PLM,
+    author    = {Fan, Weijia and Liu, Ruiping and Wei, Jiale and Chen, Yufan and Zheng, Junwei and Zeng, Zichao and Zhang, Jiaming and Li, Qiufu and Shen, Linlin and Stiefelhagen, Rainer},
+    title     = {More than the Sum: Panorama-Language Models for Adverse Omni-Scenes},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {30874-30884}
 }
 ```
 
